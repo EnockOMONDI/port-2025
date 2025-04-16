@@ -29,31 +29,19 @@ const Projects = () => {
       className="min-h-screen flex flex-col justify-center items-center"
       style={{ backgroundColor: '#970d0d' }}
     >
-      <div className="w-full max-w-5xl flex flex-col md:flex-row justify-between items-center">
+      <div className="w-full max-w-4xl flex flex-col md:flex-row justify-between items-center">
         <div>
           <div className="text-white text-xl mb-2">Project Portfolio</div>
           <h1 className="text-white font-extrabold text-6xl md:text-7xl leading-tight mb-8">
             HIGHLIGHTED<br />PROJECTS
           </h1>
         </div>
-        <ul className="text-white text-2xl font-light list-disc ml-8">
+        <ul className="text-white text-3xl font-light list-disc ml-8">
           <li>Graphic design</li>
           <li>Websites</li>
           <li>Branding</li>
           <li>Ads Campaigns</li>
         </ul>
-      </div>
-      <div className="w-full max-w-5xl mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, idx) => (
-          <div
-            key={idx}
-            className="bg-white bg-opacity-10 border border-white border-opacity-20 rounded-xl p-6 text-white shadow-lg"
-          >
-            <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-            <div className="text-yellow-300 font-semibold mb-2">{project.type}</div>
-            <p className="text-lg">{project.description}</p>
-          </div>
-        ))}
       </div>
       <div className="mt-16">
         <span
